@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Ite16 Project for Postgresql",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raviejay/Project.git"
+  },
+  "author": "Ravie jay M Puspus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raviejay/Project/issues"
+  },
+  "homepage": "https://github.com/raviejay/Project#readme",
+  "devDependencies": {
+    "electron": "^24.4.0"
+  }
+}
