@@ -19,5 +19,8 @@
   "homepage": "https://github.com/raviejay/Project#readme",
   "devDependencies": {
     "electron": "^24.4.0"
+  },
+  "dependencies": {
+    "pg": "^8.11.0"
   }
 }

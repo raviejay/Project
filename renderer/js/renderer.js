@@ -1,2 +1,14 @@
-const information = document.getElementById('info')
-information.innerText = `This app is using Chrome (v${versions.chrome()}), Node.js (v${versions.node()}), and Electron (v${versions.electron()})`
+
+const ipcRenderer = window.ipcRenderer;
+
+ipcRenderer.send('executeQuery');
+
+ipcRenderer.on('queryResult', (event, result) => {
+  const resultList = document.getElementById('result');
+  result.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.innerText = JSON.stringify(item);
+    resultList.appendChild(listItem);
+  });
+});
+
